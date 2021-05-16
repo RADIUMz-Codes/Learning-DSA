@@ -1,6 +1,10 @@
 -Class has 4 hidden functions
 
 1.Constructor
+    -responsible for creating object.
+    -gets called automatically and only once.
+    -has same name as Class name.
+    -initialize data members.
 2.Copy Constructor
 3.Copy Assignment Operator
 4.Destructor
