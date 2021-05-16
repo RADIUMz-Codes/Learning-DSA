@@ -49,11 +49,12 @@ int main()
     c1.name="Maruti";
     c1.set_price(10);
     c1.model=4545;
-
+    //Calling copy constructor
+    Car c3(c2);
    
     
     c1.print();
     c2.print();
-
+    c3.print();
     return 0;
 }
