@@ -9,6 +9,9 @@
 2.Copy Constructor
     -custom Copy Constructor should be called by refrence
     -exists by default.
+    -When you need define your own copy constructor?
+    -Shallow Copy
+    -You have make your own copy constructor if a deep copy if needed!
     
 3.Copy Assignment Operator
 4.Destructor
