@@ -1,17 +1,23 @@
--Class has 4 hidden functions
+- Class has 4 hidden functions
 
 1.Constructor
-    -responsible for creating object.
-    -gets called automatically and only once.
-    -has same name as Class name.
-    -initialize data members.
+    - responsible for creating object.
+    - gets called automatically and only once.
+    - has same name as Class name.
+    - initialize data members.
 
 2.Copy Constructor
-    -custom Copy Constructor should be called by refrence
-    -exists by default.
-    -When you need define your own copy constructor?
-    -Shallow Copy
-    -You have make your own copy constructor if a deep copy if needed!
+    - custom Copy Constructor should be called by refrence
+    - exists by default.
+    - When you need define your own copy constructor?
+    - Shallow Copy
+    - You have make your own copy constructor if a deep copy if needed!
     
 3.Copy Assignment Operator
+    - Copies When we do Assignment
+    - Car d = c;
+    - Car d;
+      d=c;
+    -make your own assignment operator to make a deep copy
+    
 4.Destructor
