@@ -14,40 +14,39 @@ public:
     }
 };
 
-void insertMid(node *&head, int d,int pos)
+void insertMid(node *&head, int d, int pos)
 {
-    node *n= new node(d);
-    if(head == NULL)
+    node *n = new node(d);
+    if (head == NULL)
     {
         head = n;
         return;
     }
-    node *temp=head;
+    node *temp = head;
 
-    while(--pos)
+    while (--pos)
     {
-        temp=temp->next;
+        temp = temp->next;
     }
-    n->next=temp->next;
-    temp->next=n;
+    n->next = temp->next;
+    temp->next = n;
 }
 
-void insertAtTail(node *&head,int d)
+void insertAtTail(node *&head, int d)
 {
-    node*n= new node(d); 
-    if(head== NULL)
+    node *n = new node(d);
+    if (head == NULL)
     {
         head = n;
         return;
     }
 
-    node*temp= head;
-    while(temp->next!=NULL)
+    node *temp = head;
+    while (temp->next != NULL)
     {
-        temp=temp->next;
+        temp = temp->next;
     }
-    temp->next=n;
-
+    temp->next = n;
 }
 
 void print(node *head)
@@ -62,14 +61,13 @@ void print(node *head)
 
 int main()
 {
-    node*head=NULL;
+    node *head = NULL;
     insertAtTail(head, 3);
     insertAtTail(head, 4);
     insertAtTail(head, 1);
     insertAtTail(head, 2);
 
-    insertMid(head,69,4);
+    insertMid(head, 69, 4);
     print(head);
     return 0;
-    
 }
