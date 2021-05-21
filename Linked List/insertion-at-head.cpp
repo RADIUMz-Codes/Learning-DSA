@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Node
+class node
 {
 public:
     int data;
-    Node *next;
+    node *next;
 
-    Node(int d)
+    node(int d)
     {
         data = d;
         next = NULL;
@@ -16,19 +16,19 @@ public:
 
 // very very important
 
-void insertHead(Node *&head, int d)
+void insertHead(node *&head, int d)
 {
     if (head == NULL)
     {
-        head = new Node(d);// in 1st we just add data ,address remains NULL,head stores the address of this node
+        head = new node(d); // in 1st we just add data ,address remains NULL,head stores the address of this node
         return;
     }
-    Node *n = new Node(d);//new Node is created and initialized with data, address=NULL
-    n->next = head;// updating address in next with the address of previous head
-    head = n;// updating the address stored in head with the address of current node
+    node *n = new node(d); //new node is created and initialized with data, address=NULL
+    n->next = head;        // updating address in next with the address of previous head
+    head = n;              // updating the address stored in head with the address of current node
 }
 
-void print(Node *head)
+void print(node *head)
 {
     while (head != NULL)
     {
@@ -40,7 +40,7 @@ void print(Node *head)
 
 int main()
 {
-    Node *head = NULL;
+    node *head = NULL;
     insertHead(head, 3);
     insertHead(head, 1);
     insertHead(head, 9);
