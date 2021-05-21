@@ -32,15 +32,6 @@ void insertAtTail(node *&head,int d)
 
 }
 
-void print(node *head)
-{
-    while (head != NULL)
-    {
-        cout << head->data;
-        cout << "->";
-        head = head->next;
-    }
-}
 
 //search takes O(n) time in worst case
 int search(node *head,int key){
@@ -85,6 +76,5 @@ int main()
     cout<<searchRecursive(head,1)<<endl;
     cout <<searchRecursive(head,20);
 
-    // print(head);
     return 0;
 }
