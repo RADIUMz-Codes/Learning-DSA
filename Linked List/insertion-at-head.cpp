@@ -14,16 +14,18 @@ public:
     }
 };
 
+// very very important
+
 void insertHead(Node *&head, int d)
 {
     if (head == NULL)
     {
-        head = new Node(d);
+        head = new Node(d);// in 1st we just add data ,address remains NULL,head stores the address of this node
         return;
     }
-    Node *n = new Node(d);
-    n->next = head;
-    head = n;
+    Node *n = new Node(d);//new Node is created and initialized with data, address=NULL
+    n->next = head;// updating address in next with the address of previous head
+    head = n;// updating the address stored in head with the address of current node
 }
 
 void print(Node *head)
