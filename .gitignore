@@ -3,3 +3,6 @@
 *.exe~
 *.bin
 .cph
+
+#test file
+test.cpp
