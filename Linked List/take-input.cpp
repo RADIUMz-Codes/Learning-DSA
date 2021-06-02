@@ -20,14 +20,13 @@ void insertHead(node *&head, int d)
 {
     if (head == NULL)
     {
-        head = new node(d); // in 1st we just add data ,address remains NULL,head stores the address of this node
+        head = new node(d); 
         return;
     }
-    node *n = new node(d); //new node is created and initialized with data, address=NULL
-    n->next = head;        // updating address in next with the address of previous head
-    head = n;              // updating the address stored in head with the address of current node
+    node *n = new node(d);
+    n->next = head;        
+    head = n;              
 }
-
 void print(node *head)
 {
     while (head != NULL)
@@ -56,6 +55,5 @@ int main()
 {
     node*head = take_input();
     print(head);
-    
     return 0;
 }
