@@ -3,8 +3,10 @@
 *.exe~
 *.bin
 .cph
-
+.vscode
 #test file
 test.cpp
 inputf.in
 outputf.in
+.vscode/launch.json
+.vscode/tasks.json
