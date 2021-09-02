@@ -14,7 +14,6 @@ public:
         right = NULL;
     }
 };
-
 node *buildTree()
 {
     int d;
@@ -29,24 +28,25 @@ node *buildTree()
     return root;
 }
 
-void print(node *root)
-{
-    if (root == NULL)
-    {
-        return;
+void BFS(node* root){
+    queue<node*> Q;
+    Q.push(root);
+    while(!Q.empty()){
+        node *curr= Q.front();
+        cout<<curr->data<<" ";
+        if(curr->left){
+            Q.push(curr->left);
+        }
+        if(curr->right){
+            Q.push(curr->right);
+        }
+        Q.pop();
     }
-    cout << root->data << " ";
-    if (root->left != NULL)
-        cout << root->left->data << " ";
-    if (root->right != NULL)
-        cout << root->right->data << " ";
-    print(root->left);
-    print(root->right);
 }
 
 int main()
 {
-    node *root = buildTree();
-    print(root);
-    return 0;
+    node *root= buildTree();
+    BFS(root);
+    
 }

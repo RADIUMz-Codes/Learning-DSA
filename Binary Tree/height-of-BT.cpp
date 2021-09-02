@@ -15,6 +15,13 @@ public:
     }
 };
 
+int findHeight(node *root){
+    if(root==NULL){
+        return 0;
+    }
+    return max(findHeight(root->left),findHeight(root->right))+1;
+}
+
 node *buildTree()
 {
     int d;
@@ -29,24 +36,10 @@ node *buildTree()
     return root;
 }
 
-void print(node *root)
-{
-    if (root == NULL)
-    {
-        return;
-    }
-    cout << root->data << " ";
-    if (root->left != NULL)
-        cout << root->left->data << " ";
-    if (root->right != NULL)
-        cout << root->right->data << " ";
-    print(root->left);
-    print(root->right);
-}
-
 int main()
 {
-    node *root = buildTree();
-    print(root);
+    node* root= buildTree();
+    cout<<findHeight(root);
     return 0;
+    
 }
