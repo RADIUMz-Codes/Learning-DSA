@@ -6,6 +6,8 @@
 .vscode
 #test file
 test.cpp
+test.c
+.vscode
 inputf.in
 outputf.in
 .vscode/launch.json
