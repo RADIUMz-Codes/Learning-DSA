@@ -4,14 +4,18 @@ int main()
 {
 	int n, m, k, s;
 	cin >> n >> m >> k >> s;
-	char a[100][100] ;
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
+	char a[100][100];
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < m; j++)
+		{
 			cin >> a[i][j];
 		}
 	}
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < m; j++)
+		{
 			if (s >= k)
 			{
 				if (s > 0)
@@ -36,6 +40,6 @@ int main()
 		cout << "NO";
 		return 0;
 	}
-	cout << "YES\n" << s;
-
+	cout << "YES\n"
+		 << s;
 }
