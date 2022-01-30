@@ -11,7 +11,6 @@ void inputGraph(vector<int> adj[], int n, int m)
         adj[y].push_back(x);
     }
 }
-
 void bfs(vector<int> adj[], int n)
 {
     vector<int> vis(n);

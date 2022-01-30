@@ -5,7 +5,6 @@ template <typename T>
 class Graph
 {
     map<T, list<T>> l;
-
 public:
     void addEdge(int x, int y)
     {

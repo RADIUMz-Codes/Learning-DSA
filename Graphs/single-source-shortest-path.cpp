@@ -11,6 +11,7 @@ void inputGraph(vector<int> g[], int n, int m)
         g[y].push_back(x);
     }
 }
+
 /* ------------------- sssp = Single Source Shortest Path ------------------- */
 int sssp(vector<int> g[], int n, int src, int dest)
 {
