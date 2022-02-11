@@ -12,3 +12,5 @@ inputf.in
 outputf.in
 .vscode/launch.json
 .vscode/tasks.json
+input.txt
+output.txt
