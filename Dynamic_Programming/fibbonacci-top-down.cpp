@@ -20,9 +20,10 @@ int fib(int n, int dp[])
 
 int main()
 {
+    
     int n;
     cin >> n;
     int dp[100]={0};
     cout << n << endl;
-    cout << fib(n, dp);
+    cout << fib(n, dp)<<endl;
 }
