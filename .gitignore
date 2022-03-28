@@ -1,16 +1,4 @@
-# ignoring exe and bin files
-*.exe
-*.exe~
-*.bin
-.cph
-.vscode
-#test file
-test.cpp
-test.c
-.vscode
-inputf.in
-outputf.in
-.vscode/launch.json
-.vscode/tasks.json
-input.txt
-output.txt
+*
+
+!*.*
+!*/

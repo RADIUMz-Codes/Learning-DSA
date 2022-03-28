@@ -42,9 +42,9 @@ int countDp(int arr[], int n, int sum)
     {
         for (int j = 1; j <= sum; j++)
         {
-            if (arr[i] <= j)
+            if (arr[i-1] <= j)
             {
-                dp[i][j] = dp[i - 1][j - arr[i]] + dp[i - 1][j];
+                dp[i][j] = dp[i - 1][j - arr[i-1]] + dp[i - 1][j];
             }
             else
             {
@@ -69,7 +69,7 @@ int main()
     int arr[5] = {1, 2, 7, 3, 4};
     int sum = 5;
     cout << coutnRecc(arr, 5, sum)<<endl;
-    cout<<countDp(arr, 5, sum);
+    cout<<countDp(arr, 5, sum)<<endl;
 
     return 0;
 }
