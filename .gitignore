@@ -1,2 +1,5 @@
-.exe
+*.exe
+*.json
 .cph
+test.cpp
+
