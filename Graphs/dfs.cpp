@@ -40,9 +40,9 @@ int main()
     cin >> n >> m;
     for (int i = 0; i < m; i++)
     {
-        int v1, v2;
-        g[v1].push_back(v2);
-        g[v2].push_back(v1);
+        int u, v;
+        g[u].push_back(v);
+        g[v].push_back(u);
     }
     return 0;
 }
